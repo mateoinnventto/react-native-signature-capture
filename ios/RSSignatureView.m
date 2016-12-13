@@ -180,7 +180,7 @@
 	NSLocale* currentLocale = [NSLocale currentLocale];
   [[NSDate date] descriptionWithLocale:currentLocale];
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-  [formatter setDateFormat:@"/dd-MM-yyyyHH-mm"];
+  [formatter setDateFormat:@"/ddMMyyyyHHmmss"];
   NSString *dateString = [formatter stringFromDate:[NSDate date]];
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths firstObject];
